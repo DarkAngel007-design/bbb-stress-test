@@ -63,3 +63,6 @@ pip install -r requirements.txt     # or the conda env used here
 python run_all.py                   # from this folder; add `--skip 05 06` to omit the slow steps
 ```
 Needs the DeePred-BBB Table 1 spreadsheet (`Table 1.XLSX`, from the paper's supplementary material) next to `run_all.py` or one level up, or set `TABLE1_PATH`. It is not included in this repository. Scripts are `01_audit.py` … `08_summaries.py`; they read `data/` and `results/` relative to the working directory.
+
+## Licence
+Code in this repository is released under the MIT licence (see `LICENSE`). The licence covers the code only. The DeePred-BBB dataset (Table 1 of Kumar et al., 2022), BBBP and B3DB have their own terms; they are not distributed here.
