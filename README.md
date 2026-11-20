@@ -40,7 +40,7 @@ Logistic regression (descriptors), random forest (ECFP4; descriptors+ECFP4), Lig
 | GIN | 0.895 | 0.822 | 0.768 | 0.710 |
 | GIN + desc | 0.904 | 0.836 | 0.786 | 0.773 |
 
-Accuracy of always predicting "permeable" is about 0.73. GIN numbers are from a full `run_all.py` re-run; the GIN is not bit-reproducible (thread scheduling), and two runs differed by up to about 0.01 in MCC and in AUROC. All other models reproduced exactly. Full tables: `baseline_summary.csv`, `xgb_results_per_run.csv`, `gin_results_per_run.csv`, paired comparisons in `xgb_paired_vs_baselines.csv` and `gin_paired_vs_lgbm.csv`.
+Accuracy of always predicting "permeable" is about 0.73. GIN numbers are from a full `run_all.py` re-run; the GIN is not bit-reproducible (thread scheduling), and two runs differed by up to about 0.01 in MCC and in AUROC. All other models reproduced exactly. Result tables and figures are in `results_summary/`. Full tables: `baseline_summary.csv`, `xgb_results_per_run.csv`, `gin_results_per_run.csv`, paired comparisons in `xgb_paired_vs_baselines.csv` and `gin_paired_vs_lgbm.csv`.
 
 ## Findings
 1. A plain random split places a stereoisomer of the same flat structure in training for 65% of test compounds, so it is a weak test of generalisation.
@@ -63,9 +63,6 @@ pip install -r requirements.txt     # or the conda env used here
 python run_all.py                   # from this folder; add `--skip 05 06` to omit the slow steps
 ```
 Needs the DeePred-BBB Table 1 spreadsheet (`Table 1.XLSX`, from the paper's supplementary material) next to `run_all.py` or one level up, or set `TABLE1_PATH`. It is not included in this repository. Scripts are `01_audit.py` … `08_summaries.py`; they read `data/` and `results/` relative to the working directory.
-
-## Licence
-Code in this repository is released under the MIT licence (see `LICENSE`). The licence covers the code only. The DeePred-BBB dataset (Table 1 of Kumar et al., 2022), BBBP and B3DB have their own terms; they are not distributed here.
 
 ## Licence
 Code in this repository is released under the MIT licence (see `LICENSE`). The licence covers the code only. The DeePred-BBB dataset (Table 1 of Kumar et al., 2022), BBBP and B3DB have their own terms; they are not distributed here.
