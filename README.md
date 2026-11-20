@@ -66,3 +66,6 @@ Needs the DeePred-BBB Table 1 spreadsheet (`Table 1.XLSX`, from the paper's supp
 
 ## Licence
 Code in this repository is released under the MIT licence (see `LICENSE`). The licence covers the code only. The DeePred-BBB dataset (Table 1 of Kumar et al., 2022), BBBP and B3DB have their own terms; they are not distributed here.
+
+## Licence
+Code in this repository is released under the MIT licence (see `LICENSE`). The licence covers the code only. The DeePred-BBB dataset (Table 1 of Kumar et al., 2022), BBBP and B3DB have their own terms; they are not distributed here.
