@@ -1,0 +1,8 @@
+split,n_test,test_pos,med_maxsim,sim_sd,ge_0_9,ge_0_7,scaf_in_train,flat_in_train
+cluster_butina,872.0,0.743,0.388,0.027,0.0,0.066,0.386,0.0
+random_groups,871.0,0.729,0.596,0.016,0.014,0.33,0.58,0.0
+random_rows,871.0,0.726,1.0,0.0,0.66,0.741,0.852,0.653
+scaffold_rand,872.4,0.702,0.47,0.042,0.007,0.106,0.0,0.0
+source_holdout_Roy,94.0,0.617,0.526,,0.021,0.213,0.309,0.0
+source_holdout_Shen,38.0,0.658,0.532,,0.026,0.237,0.658,0.0
+source_holdout_Zhao,683.0,0.903,0.367,,0.001,0.035,0.388,0.0

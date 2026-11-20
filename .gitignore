@@ -1,0 +1,7 @@
+data/
+results/
+src/
+__pycache__/
+*.xlsx
+*.XLSX
+.DS_Store
